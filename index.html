@@ -27,7 +27,7 @@
         overflow-x: hidden;
         position: relative;
       }
-      /* Overlay to enhance readability */
+      /* Overlay for enhanced readability */
       .overlay {
         position: absolute;
         inset: 0;
@@ -41,24 +41,7 @@
         opacity: 0;
         transform: translateY(20px);
       }
-      /* Modal styles */
-      .modal-overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 40;
-        display: none;
-        justify-content: center;
-        align-items: center;
-      }
-      .modal-content {
-        background: #fff;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        max-width: 500px;
-        width: 90%;
-      }
-      /* Floating CTA for contact (optional additional CTA) */
+      /* Floating "Get in Touch" button */
       .floating-cta {
         position: fixed;
         top: 1rem;
@@ -79,14 +62,56 @@
       .floating-cta a:hover {
         background-color: #51171B;
       }
+      /* Modal styles */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 40;
+        display: none; /* Hidden by default */
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-content {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        max-width: 500px;
+        width: 90%;
+        position: relative;
+      }
+      /* Contact form styling */
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+      }
+      .contact-form button {
+        width: 100%;
+        background-color: #6B1F23;
+        color: #fff;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .contact-form button:hover {
+        background-color: #51171B;
+      }
     </style>
   </head>
   <body>
     <div class="overlay"></div>
 
-    <!-- (Optional) Floating CTA at top-right -->
+    <!-- Floating CTA -->
     <div class="floating-cta">
-      <a href="#contact" onclick="openModal()">Let's Connect</a>
+      <a href="#contact" onclick="openModal()">Let's Connect!</a>
     </div>
 
     <!-- HERO SECTION -->
@@ -141,13 +166,13 @@
       <div class="max-w-4xl mx-auto text-center fade-up">
         <h2 class="text-4xl font-bold mb-6">Connect With Us</h2>
         <p class="text-xl mb-8">
-          We are seeking visionary collaborators to help us pave the way for sustainable luxury. Join us if you are:
+          We are seeking visionary collaborators to help pave the way for sustainable luxury. If you are passionate about:
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Card 1 -->
           <div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300">
             <h3 class="text-2xl font-semibold mb-4">Innovative Cosmetic Alchemy</h3>
-            <p>Help us push the boundaries in repurposing cosmetic ingredients.</p>
+            <p>Push the boundaries in repurposing cosmetic ingredients.</p>
           </div>
           <!-- Card 2 -->
           <div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300">
@@ -163,7 +188,7 @@
       </div>
     </section>
 
-    <!-- CONTACT CALL-TO-ACTION -->
+    <!-- CONTACT CALL-TO-ACTION SECTION -->
     <section id="contact-cta" class="relative z-10 py-16 px-4 bg-white bg-opacity-80">
       <div class="max-w-4xl mx-auto text-center fade-up">
         <h2 class="text-4xl font-bold mb-6">Ready to Connect?</h2>
@@ -176,9 +201,9 @@
       </div>
     </section>
 
-    <!-- MODAL CONTACT FORM (initially hidden) -->
-    <div id="contactModal" class="modal-overlay flex">
-      <div class="modal-content relative">
+    <!-- MODAL CONTACT FORM (hidden by default) -->
+    <div id="contactModal" class="modal-overlay">
+      <div class="modal-content">
         <button onclick="closeModal()" class="absolute top-2 right-2 text-2xl text-gray-600">&times;</button>
         <h2 class="text-3xl font-bold mb-4 text-center">Contact Us</h2>
         <form class="space-y-4">
@@ -213,7 +238,7 @@
     </footer>
 
     <script>
-      // Register GSAP ScrollTrigger and animate fade-up elements
+      // Animate elements on scroll with GSAP
       gsap.registerPlugin(ScrollTrigger);
       gsap.utils.toArray(".fade-up").forEach(function(elem, index) {
         gsap.fromTo(
@@ -234,7 +259,7 @@
         );
       });
 
-      // Modal open/close functions
+      // Modal functions
       function openModal() {
         const modal = document.getElementById("contactModal");
         modal.style.display = "flex";
