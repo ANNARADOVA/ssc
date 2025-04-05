@@ -1,266 +1,249 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Second Skin Care® Landing&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Tailwind CSS CDN --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Google Fonts --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Lato:wght@300;400;700&amp;display=swap"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>rel="stylesheet"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- GSAP and ScrollTrigger --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-family: 'Lato', sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #F8F3EF;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>color: #6B1F23;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-image: url('https://source.unsplash.com/1600x900/?leather,texture');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-size: cover;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-position: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-attachment: fixed;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>overflow-x: hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: relative;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/* Overlay to enhance readability */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.overlay {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: absolute;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>inset: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background: rgba(248, 243, 239, 0.85);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>z-index: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>h1, h2 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-family: 'Playfair Display', serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.fade-up {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>opacity: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transform: translateY(20px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/* Modal styles */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.modal-overlay {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: fixed;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>inset: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background: rgba(0, 0, 0, 0.5);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>z-index: 40;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>display: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>justify-content: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.modal-content {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background: #fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding: 2rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>border-radius: 0.5rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>max-width: 500px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>width: 90%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/* Floating CTA for contact (optional additional CTA) */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.floating-cta {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>position: fixed;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>top: 1rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>right: 1rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>z-index: 50;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.floating-cta a {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #6B1F23;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>color: #fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>padding: 0.75rem 1.25rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>border-radius: 9999px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-size: 1rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>font-weight: bold;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>text-decoration: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>box-shadow: 0 2px 6px rgba(0,0,0,0.2);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>transition: background-color 0.3s ease;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.floating-cta a:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>background-color: #51171B;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="overlay"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- (Optional) Floating CTA at top-right --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="floating-cta"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#contact" onclick="openModal()"&gt;Let's Connect&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- HERO SECTION --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="hero" class="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-3xl"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1 class="text-6xl md:text-7xl font-bold mb-6 fade-up"&gt;Give Your Second Skins a Second Life&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-2xl md:text-3xl mb-8 fade-up" style="animation-delay: 0.3s;"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>We aim to redefine waste by transforming expired makeup into groundbreaking leather care innovations.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- MISSION SECTION --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="mission" class="relative z-10 py-16 px-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-4xl mx-auto text-center fade-up"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-4xl font-bold mb-6"&gt;Our Mission&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-xl mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>At Second Skin Care, we aim to transform the lifecycle of cosmetic ingredients by repurposing expired makeup into innovative leather care solutions.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-xl"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Through precise extraction and formulation techniques, we are working towards creating premium leather conditioners, color protectants, and hydrating balms that blend science with sustainability.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- TEAM SECTION --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="team" class="relative z-10 py-16 px-4 bg-white bg-opacity-80"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-4xl mx-auto text-center fade-up"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-4xl font-bold mb-6"&gt;Our Team&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-xl mb-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Founded by passionate innovators, our small team is driven by the vision to reinvent beauty and sustainability.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col md:flex-row items-center justify-center gap-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Co-founder 1 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="flex flex-col items-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/150" alt="Anna Radová" class="rounded-full shadow-lg mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-xl font-semibold"&gt;Anna Radová&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm"&gt;Co-founder&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Co-founder 2 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="flex flex-col items-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/150" alt="Naima Lange" class="rounded-full shadow-lg mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-xl font-semibold"&gt;Naima Lange&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-sm"&gt;Co-founder&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- CONNECT WITH US SECTION --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="connect" class="relative z-10 py-16 px-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-4xl mx-auto text-center fade-up"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-4xl font-bold mb-6"&gt;Connect With Us&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-xl mb-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>We are seeking visionary collaborators to help us pave the way for sustainable luxury. Join us if you are:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Card 1 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-2xl font-semibold mb-4"&gt;Innovative Cosmetic Alchemy&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Help us push the boundaries in repurposing cosmetic ingredients.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Card 2 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-2xl font-semibold mb-4"&gt;Eco-Luxe Design&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Collaborate on creating sophisticated, sustainable packaging.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Card 3 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-2xl font-semibold mb-4"&gt;Visionary Partnerships&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Join forces to redefine the future of sustainable luxury.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- CONTACT CALL-TO-ACTION --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="contact-cta" class="relative z-10 py-16 px-4 bg-white bg-opacity-80"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-4xl mx-auto text-center fade-up"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-4xl font-bold mb-6"&gt;Ready to Connect?&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-xl mb-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Click the button below to share your details—we’d love to hear from you.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button onclick="openModal()" class="bg-[#6B1F23] text-white px-8 py-4 rounded-full shadow-xl hover:bg-[#51171B] transition text-xl"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Get in Touch</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- MODAL CONTACT FORM (initially hidden) --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="contactModal" class="modal-overlay flex"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="modal-content relative"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button onclick="closeModal()" class="absolute top-2 right-2 text-2xl text-gray-600"&gt;&amp;times;&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-3xl font-bold mb-4 text-center"&gt;Contact Us&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;form class="space-y-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;input type="text" placeholder="Name" required class="w-full p-3 border border-gray-300 rounded" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;input type="email" placeholder="Email" required class="w-full p-3 border border-gray-300 rounded" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;input type="tel" placeholder="Phone" class="w-full p-3 border border-gray-300 rounded" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;input type="url" placeholder="LinkedIn URL (optional)" class="w-full p-3 border border-gray-300 rounded" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="purpose" class="block mb-1 font-semibold"&gt;Purpose of Contact&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;select id="purpose" required class="w-full p-3 border border-gray-300 rounded"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;option value=""&gt;Select an option&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;option value="investor"&gt;Investor Inquiry&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;option value="partnership"&gt;Partnership Opportunity&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;option value="media"&gt;Media / PR&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;option value="general"&gt;General Inquiry&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;textarea placeholder="Your Message" rows="5" required class="w-full p-3 border border-gray-300 rounded"&gt;&lt;/textarea&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;button type="submit" class="w-full bg-[#6B1F23] text-white p-3 rounded shadow hover:bg-[#51171B] transition"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Send Message</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- FOOTER --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="relative z-10 py-6 text-center fade-up"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="max-w-4xl mx-auto px-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-lg italic"&gt;Second Skin Care&amp;reg;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-sm"&gt;2025 Limited | Munich, Germany&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// Register GSAP ScrollTrigger and animate fade-up elements</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gsap.registerPlugin(ScrollTrigger);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gsap.utils.toArray(".fade-up").forEach(function(elem, index) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>gsap.fromTo(</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>elem,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>{ opacity: 0, y: 20 },</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>opacity: 1,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>y: 0,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>duration: 1,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>ease: "power3.out",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>scrollTrigger: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>trigger: elem,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>start: "top 80%",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>toggleActions: "play none none reverse"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>delay: index * 0.2</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// Modal open/close functions</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function openModal() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const modal = document.getElementById("contactModal");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>modal.style.display = "flex";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>gsap.fromTo(modal, { opacity: 0 }, { opacity: 1, duration: 0.5 });</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function closeModal() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const modal = document.getElementById("contactModal");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>gsap.to(modal, { opacity: 0, duration: 0.5, onComplete: () =&gt; modal.style.display = "none" });</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Second Skin Care® Landing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+        background-color: #F8F3EF;
+        color: #6B1F23;
+        background-image: url('https://source.unsplash.com/1600x900/?leather,texture');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        position: relative;
+      }
+      /* Overlay to enhance readability */
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(248, 243, 239, 0.85);
+        z-index: 0;
+      }
+      h1, h2 {
+        font-family: 'Playfair Display', serif;
+      }
+      .fade-up {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      /* Modal styles */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 40;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-content {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        max-width: 500px;
+        width: 90%;
+      }
+      /* Floating CTA for contact (optional additional CTA) */
+      .floating-cta {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 50;
+      }
+      .floating-cta a {
+        background-color: #6B1F23;
+        color: #fff;
+        padding: 0.75rem 1.25rem;
+        border-radius: 9999px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        transition: background-color 0.3s ease;
+      }
+      .floating-cta a:hover {
+        background-color: #51171B;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <!-- (Optional) Floating CTA at top-right -->
+    <div class="floating-cta">
+      <a href="#contact" onclick="openModal()">Let's Connect</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-4">
+      <div class="max-w-3xl">
+        <h1 class="text-6xl md:text-7xl font-bold mb-6 fade-up">Give Your Second Skins a Second Life</h1>
+        <p class="text-2xl md:text-3xl mb-8 fade-up" style="animation-delay: 0.3s;">
+          We aim to redefine waste by transforming expired makeup into groundbreaking leather care innovations.
+        </p>
+      </div>
+    </section>
+
+    <!-- MISSION SECTION -->
+    <section id="mission" class="relative z-10 py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center fade-up">
+        <h2 class="text-4xl font-bold mb-6">Our Mission</h2>
+        <p class="text-xl mb-4">
+          At Second Skin Care, we aim to transform the lifecycle of cosmetic ingredients by repurposing expired makeup into innovative leather care solutions.
+        </p>
+        <p class="text-xl">
+          Through precise extraction and formulation techniques, we are working towards creating premium leather conditioners, color protectants, and hydrating balms that blend science with sustainability.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="relative z-10 py-16 px-4 bg-white bg-opacity-80">
+      <div class="max-w-4xl mx-auto text-center fade-up">
+        <h2 class="text-4xl font-bold mb-6">Our Team</h2>
+        <p class="text-xl mb-8">
+          Founded by passionate innovators, our small team is driven by the vision to reinvent beauty and sustainability.
+        </p>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+          <!-- Co-founder 1 -->
+          <div class="flex flex-col items-center">
+            <img src="https://via.placeholder.com/150" alt="Anna Radová" class="rounded-full shadow-lg mb-4">
+            <p class="text-xl font-semibold">Anna Radová</p>
+            <p class="text-sm">Co-founder</p>
+          </div>
+          <!-- Co-founder 2 -->
+          <div class="flex flex-col items-center">
+            <img src="https://via.placeholder.com/150" alt="Naima Lange" class="rounded-full shadow-lg mb-4">
+            <p class="text-xl font-semibold">Naima Lange</p>
+            <p class="text-sm">Co-founder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECT WITH US SECTION -->
+    <section id="connect" class="relative z-10 py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center fade-up">
+        <h2 class="text-4xl font-bold mb-6">Connect With Us</h2>
+        <p class="text-xl mb-8">
+          We are seeking visionary collaborators to help us pave the way for sustainable luxury. Join us if you are:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-2xl font-semibold mb-4">Innovative Cosmetic Alchemy</h3>
+            <p>Help us push the boundaries in repurposing cosmetic ingredients.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-2xl font-semibold mb-4">Eco-Luxe Design</h3>
+            <p>Collaborate on creating sophisticated, sustainable packaging.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="p-6 border border-[#6B1F23] rounded-lg hover:shadow-2xl transition duration-300">
+            <h3 class="text-2xl font-semibold mb-4">Visionary Partnerships</h3>
+            <p>Join forces to redefine the future of sustainable luxury.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CALL-TO-ACTION -->
+    <section id="contact-cta" class="relative z-10 py-16 px-4 bg-white bg-opacity-80">
+      <div class="max-w-4xl mx-auto text-center fade-up">
+        <h2 class="text-4xl font-bold mb-6">Ready to Connect?</h2>
+        <p class="text-xl mb-8">
+          Click the button below to share your details—we’d love to hear from you.
+        </p>
+        <button onclick="openModal()" class="bg-[#6B1F23] text-white px-8 py-4 rounded-full shadow-xl hover:bg-[#51171B] transition text-xl">
+          Get in Touch
+        </button>
+      </div>
+    </section>
+
+    <!-- MODAL CONTACT FORM (initially hidden) -->
+    <div id="contactModal" class="modal-overlay flex">
+      <div class="modal-content relative">
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-2xl text-gray-600">&times;</button>
+        <h2 class="text-3xl font-bold mb-4 text-center">Contact Us</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Name" required class="w-full p-3 border border-gray-300 rounded" />
+          <input type="email" placeholder="Email" required class="w-full p-3 border border-gray-300 rounded" />
+          <input type="tel" placeholder="Phone" class="w-full p-3 border border-gray-300 rounded" />
+          <input type="url" placeholder="LinkedIn URL (optional)" class="w-full p-3 border border-gray-300 rounded" />
+          <div>
+            <label for="purpose" class="block mb-1 font-semibold">Purpose of Contact</label>
+            <select id="purpose" required class="w-full p-3 border border-gray-300 rounded">
+              <option value="">Select an option</option>
+              <option value="investor">Investor Inquiry</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="media">Media / PR</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <textarea placeholder="Your Message" rows="5" required class="w-full p-3 border border-gray-300 rounded"></textarea>
+          <button type="submit" class="w-full bg-[#6B1F23] text-white p-3 rounded shadow hover:bg-[#51171B] transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="relative z-10 py-6 text-center fade-up">
+      <div class="max-w-4xl mx-auto px-4">
+        <p class="text-lg italic">Second Skin Care&reg;</p>
+        <p class="text-sm">2025 Limited | Munich, Germany</p>
+      </div>
+    </footer>
+
+    <script>
+      // Register GSAP ScrollTrigger and animate fade-up elements
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.utils.toArray(".fade-up").forEach(function(elem, index) {
+        gsap.fromTo(
+          elem,
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 80%",
+              toggleActions: "play none none reverse"
+            },
+            delay: index * 0.2
+          }
+        );
+      });
+
+      // Modal open/close functions
+      function openModal() {
+        const modal = document.getElementById("contactModal");
+        modal.style.display = "flex";
+        gsap.fromTo(modal, { opacity: 0 }, { opacity: 1, duration: 0.5 });
+      }
+      function closeModal() {
+        const modal = document.getElementById("contactModal");
+        gsap.to(modal, { opacity: 0, duration: 0.5, onComplete: () => modal.style.display = "none" });
+      }
+    </script>
+  </body>
 </html>
