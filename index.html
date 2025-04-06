@@ -51,7 +51,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         color: #6B1F23;
-        background: rgba(248, 243, 239, 0.9); /* Optional for better readability */
+        background: rgba(248, 243, 239, 0.9);
       }
       /* Floating "Get in Touch" button in top right */
       .floating-cta {
@@ -68,7 +68,7 @@
         font-size: 1rem;
         font-weight: bold;
         text-decoration: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         transition: background-color 0.3s ease;
       }
       .floating-cta a:hover {
@@ -120,15 +120,15 @@
   </head>
   <body>
     <div class="overlay"></div>
-    
+
     <!-- Fixed Logo -->
     <div class="logo">Second Skin Care&reg;</div>
-    
+
     <!-- Floating CTA -->
     <div class="floating-cta">
       <a href="#contact" onclick="openModal()">Let's Connect!</a>
     </div>
-    
+
     <!-- HERO SECTION -->
     <section id="hero" class="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
       <div class="max-w-3xl">
@@ -138,7 +138,7 @@
         </p>
       </div>
     </section>
-    
+
     <!-- MISSION SECTION -->
     <section id="mission" class="relative z-10 py-16 px-4">
       <div class="max-w-4xl mx-auto text-center fade-up">
@@ -151,7 +151,7 @@
         </p>
       </div>
     </section>
-    
+
     <!-- TEAM SECTION -->
     <section id="team" class="relative z-10 py-16 px-4 bg-white bg-opacity-80">
       <div class="max-w-4xl mx-auto text-center fade-up">
@@ -175,7 +175,17 @@
         </div>
       </div>
     </section>
-    
+
+    <!-- OUR STORY SECTION -->
+    <section id="story" class="relative z-10 py-16 px-4">
+      <div class="max-w-4xl mx-auto text-center fade-up">
+        <h2 class="text-4xl font-bold mb-6">Our Story</h2>
+        <p class="text-xl">
+          We launched Second Skin Care during an Innovation Sprint—a week-long challenge where industry leaders like L’Oréal and Circular Republic exposed a harsh reality: in Germany, 3 to 5 million units of expired and damaged makeup were being burned each year. That pivotal moment ignited our passion. As co-founders, we, Anna Radová and Naima Lange, realized that waste could be transformed into something valuable. Our journey is driven by the vision to reinvent beauty and sustainability—one breakthrough at a time.
+        </p>
+      </div>
+    </section>
+
     <!-- CONNECT WITH US SECTION -->
     <section id="connect" class="relative z-10 py-16 px-4">
       <div class="max-w-4xl mx-auto text-center fade-up">
@@ -202,7 +212,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- CONTACT CALL-TO-ACTION SECTION -->
     <section id="contact-cta" class="relative z-10 py-16 px-4 bg-white bg-opacity-80">
       <div class="max-w-4xl mx-auto text-center fade-up">
@@ -215,7 +225,7 @@
         </button>
       </div>
     </section>
-    
+
     <!-- MODAL CONTACT FORM (hidden by default) -->
     <div id="contactModal" class="modal-overlay">
       <div class="modal-content">
@@ -237,13 +247,13 @@
             </select>
           </div>
           <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">
+          <button type="submit" class="w-full bg-[#6B1F23] text-white p-3 rounded shadow hover:bg-[#51171B] transition">
             Send Message
           </button>
         </form>
       </div>
     </div>
-    
+
     <!-- FOOTER -->
     <footer class="relative z-10 py-6 text-center fade-up">
       <div class="max-w-4xl mx-auto px-4">
@@ -251,9 +261,9 @@
         <p class="text-sm">2025 Limited | Munich, Germany</p>
       </div>
     </footer>
-    
+
     <script>
-      // GSAP ScrollTrigger animations for fade-up elements
+      // Animate elements on scroll using GSAP ScrollTrigger
       gsap.registerPlugin(ScrollTrigger);
       gsap.utils.toArray(".fade-up").forEach(function(elem, index) {
         gsap.fromTo(
@@ -273,8 +283,8 @@
           }
         );
       });
-      
-      // Modal functions
+
+      // Modal open/close functions
       function openModal() {
         const modal = document.getElementById("contactModal");
         modal.style.display = "flex";
